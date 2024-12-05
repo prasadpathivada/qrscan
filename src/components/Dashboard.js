@@ -58,7 +58,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchTotalStudents = async () => {
       try {
-        const response = await fetch('http://localhost:8080/admin/users/count');
+        const response = await fetch('https://qrscan-latest.onrender.com/admin/users/count');
         const data = await response.json();
         setTotalStudents(data.total);
       } catch (error) {
