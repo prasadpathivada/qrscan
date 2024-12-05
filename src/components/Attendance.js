@@ -350,7 +350,7 @@ const Attendance = () => {
 
         try {
             const response = await axios.post(
-                'http://localhost:8080/api/attendance/add',
+                'https://qrscan-latest.onrender.com/api/attendance/add',
                 payload,
                 { headers: { Authorization: `Bearer ${token}` } }
             );
